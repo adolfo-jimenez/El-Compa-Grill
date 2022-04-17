@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Yanone+Kaffeesatz&family=Shizuru&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
+#smallText {
+    font-size: 13px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+body {
+    background-image: url(/images/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    background-color: green;
+}
+.nav {
+    text-align: center;
+}
+.nav a:link, a:visited {
+    color: white;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div {
+    text-align: center;
+}
+/* custom styling for all icons */
+i.fas,
+i.fab {
+  font-size: 25px;
+}
+/*i.fa-shopping-cart {
+    font-size: 60px;
+    color: white;
+    text-shadow: black 7px 5.5px;
+}*/
+i.fa-aws {
+    font-size: 20px;
+    color: white;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+footer {
+    padding: 10px;
+    /*background-color: rgba(0,0,0,.7);*/
+    background-color: red;
+    font-size: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: double;
+}
+.brand-rights {
+    text-align: center;
+    color: white;
+}
+small {
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 1px 1px 2px black;
+}
+small a {
+    font-family: 'Yellowtail', cursive;
+}
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* Media Queries*/
+
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 360px) {
+    
+}
