@@ -32,6 +32,11 @@ header {
 div {
     text-align: center;
 }
+.main img {
+    width: 500px;
+    height: 500px;
+
+}
 /* custom styling for all icons */
 i.fas,
 i.fab {
