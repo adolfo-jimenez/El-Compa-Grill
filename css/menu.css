@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Yanone+Kaffeesatz&family=Shizuru&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/El\ Compa\ Grill\ Front\ Pic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.87);
+    display: flex;
+    border: 1px solid black;
+    padding: 0px;
+    width: 96%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav {
+    width: 100%;
+    text-align: center;
+    /*border: 4px solid rosybrown;
+    background-color: blueviolet;*/
+    display: flex;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.nav a:link, a:visited {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav li {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Yellowtail', cursive;
+    color: black;
+    text-shadow: 1px 1px 1px cornflowerblue;
+}
+.header-left {
+    text-align: left;
+    float: left;
+    width:33%;
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+}
+.header-center {
+    /*float: left;
+    width:33%;
+    border: 1px solid black;*/
+    margin: 0px;
+    padding: 0px;
+}
+.header-center {
+    width: 150px;
+}
+.header-center a {
+    margin: 0px;
+    padding: 0px;
+}
+.header-right {
+    text-align: right;
+    float: left;
+    width:33%;
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+}
+.header-left a li {
+    /*background-color: aqua;*/
+}
+.header-right a li {
+    /*background-color: aqua;*/
+}
+.menu-main {
+    /*filter: drop-shadow(1px 1px 3px white);*/
+    border: 1px solid #161616;
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 96%;
+    padding: 0px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.menu-main h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+.menu {
+    /*filter: drop-shadow(1px 1px 3px white);
+    border: 1px solid #161616;
+    background-color: rgba(255, 255, 255, 0.87);
+    /*background: linear-gradient(
+        to right,
+        green 0%,
+        green 25%,
+        white 25%,
+        white 75%,
+        red 75%,
+        red 100%
+    );*/
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+}
+.menu div {
+    
+}
+.menu h1 {
+    
+}
+.menu-items {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.menu-items dt {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+}
+.menu-items dd {
+    margin: 20px;
+}
+.main-logo-img {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    /*background-color: blue;*/
+}
+.slide-show img {
+    width: 570px;
+    height: 400px;
+    margin: 10px;
+}
+.business-hours {
+    margin: 10px;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #161616;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* custom styling for all icons */
+i.fas,
+i.fab {
+  font-size: 25px;
+}
+i.fa-aws {
+    font-size: 20px;
+    color: white;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,.9);
+    font-size: 20px;
+    border-top: white 1px;
+    /*border-left: white 1.5px;
+    border-right: white 1.5px;
+    border-bottom: white 1.5px;*/
+    border-style: double;
+    margin-left: auto;
+    margin-right: auto;
+}
+.brand-rights {
+    text-align: center;
+}
+small {
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+small a {
+    font-family: 'Yellowtail', cursive;
+}
+.brand-rights a:link, .brand-rights a:visited {
+    text-decoration: none;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* Media Queries*/
+
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 360px) {
+    
+}
