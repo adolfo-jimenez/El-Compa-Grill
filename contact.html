@@ -54,18 +54,50 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <!--<form onsubmit="sendEmail(); reset(); return false;">
                     <h3>Something Something Email Us</h3>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="text" id="email" placeholder="Email id" required>
-                    <input type="text" id="phone" placeholder="Phone no.">
+
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Email id" required>
+
+                    <label for="email">Phone:</label>
+                    <input type="text" name="phone" placeholder="Phone no.">
+
+
                     <label for="subject">Subject:</label>
-                        <select id="subject" name="subject">
-                            <option value="selection_1">General Question</option>
-                            <option value="selection_2">Feedback</option>
-                        </select>
+                    <select id="subject" name="subject">
+                        <option value="selection_1">General Question</option>
+                        <option value="selection_2">Feedback</option>
+                    </select>
+                    
+                    <label for="email">Message:</label>
                     <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+
                     <button type="submit">Send</button>
+
+
+                    <div>
+                        <p id="result-text"></p>
+                    </div>
+                </form>-->
+
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input name="name" type="text"/><br/><br/>
+                    <label for="email">Email:</label>
+                    <input name="email" type="email"/><br/><br/>
+                    <label for="name">Message:</label>
+                    <textarea name="message"></textarea><br/><br/>
+                    <input type="submit"/>
+                    <div>
+                        <p id="result-text"></p>
+                    </div>
                 </form>
             </div>
             
@@ -83,6 +115,10 @@
         </div>
     </footer>
 
+    <script src="/javascript/form.js"></script>
+
+
+    
 </body>
 
 
