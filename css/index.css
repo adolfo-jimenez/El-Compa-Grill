@@ -25,6 +25,12 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+.topnav {
+    display: none;
+}
+.mobile-logo img {
+    display: none;
+}
 .nav {
     width: 100%;
     text-align: center;
@@ -57,18 +63,15 @@ header {
     align-items: center;
 }
 .header-center {
-    /*float: left;
-    width:33%;
-    border: 1px solid black;*/
-    margin: 0px;
-    padding: 0px;
-}
-.header-center {
-    width: 150px;
+    background-color: blue;
 }
 .header-center a {
     margin: 0px;
     padding: 0px;
+}
+.header-center a img {
+    width: 150px;
+    height: 100%;
 }
 .header-right {
     text-align: right;
@@ -83,6 +86,9 @@ header {
 }
 .header-right a li {
     /*background-color: aqua;*/
+}
+section {
+
 }
 .main div {
     text-align: center;
@@ -102,16 +108,23 @@ header {
     margin: 50px;
     padding: 10px;
 }
-.main-logo-img {
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    /*background-color: blue;*/
-}
 .slide-show img {
     width: 570px;
     height: 400px;
     margin: 10px;
+    border: 1px solid #161616;
+}
+.main-info {
+    width: 30%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-info h1 {
+    margin-bottom: 20px;
+}
+.main-info p {
+    font-weight: 500;
 }
 .business-hours {
     margin: 10px;
@@ -178,24 +191,205 @@ small a {
     text-decoration: none;
 }
 
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
 /* Media Queries*/
 
 @media (max-width: 1024px) {
     
 }
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/images/El\ Compa\ Grill\ Front\ Pic.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header {
+        background-color: unset;
+        display: unset;
+        border: none;
+        padding: 0px;
+        width: unset;
+        margin-top: 0px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        display:grid;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, .8);
+        position: relative;
+        border-bottom: 1px solid black;
+    }
     
-}
-@media (max-width: 360px) {
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
     
+    /* Style navigation menu links */
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav a img {
+        width: 10%;
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: rgba(134, 12, 12, 0.9);
+        color: white;
+    }
+
+
+    header .nav {
+        display: none;
+        position: absolute;
+    }
+
+    .mobile-logo img {
+        display: flex;
+        width: 60%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        border: 1px solid #161616;
+        filter: drop-shadow(2px 2px 5px white);
+    }
+
+    section {
+        /*background-color: chocolate;*/
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main div {
+        text-align: center;
+    }
+    .main {
+        width: 90%;
+        filter: drop-shadow(1px 1px 3px white);
+        border: 1px solid #161616;
+        background: linear-gradient(
+            to right,
+            green 0%,
+            green 33%,
+            white 33%,
+            white 66%,
+            red 66%,
+            red 100%
+        );
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .main-logo-img {
+        width: 250px;
+        height: 200px;
+        padding: 20px;
+        /*background-color: blue;*/
+    }
+    .slide-show img {
+        width: 90%;
+        height: unset;
+        margin: 10px;
+        border: 1px solid #161616;
+    }
+    .main-info {
+        width: 90%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border: 1px solid #161616;
+    }
+    .business-hours {
+        margin: 10px;
+        width: 85%;
+        padding: 10px;
+        border: 1px solid #161616;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+    /* custom styling for all icons */
+    i.fas,
+    i.fab {
+      font-size: 25px;
+    }
+    i.fa-aws {
+        font-size: 17px;
+        color: white;
+    }
+    .fa-soundcloud {
+        color: white;
+    
+    }
+    .fa-mixcloud {
+        color: white;
+        
+    }
+    .fa-twitch {
+        color: white;
+    }
+    .fa-facebook {
+        color: white;
+    }
+    .fa-instagram {
+        color: white;
+    }
+    .fa-twitter {
+        color: white;
+    }
+    footer {
+        width: 92%;
+        padding: 10px;
+        background-color: rgba(0,0,0,.9);
+        font-size: 20px;
+        border-top: white 1px;
+        /*border-left: white 1.5px;
+        border-right: white 1.5px;
+        border-bottom: white 1.5px;*/
+        border-style: double;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .brand-rights {
+        text-align: center;
+        font-size: 17px;
+        
+    }
+    small {
+        font-family: 'Yellowtail', cursive;
+        text-shadow: 1px 1px 2px black;
+        color: white;
+    }
+    small a {
+        font-family: 'Yellowtail', cursive;
+    }
+    .brand-rights a:link, .brand-rights a:visited {
+        text-decoration: none;
+    }
 }

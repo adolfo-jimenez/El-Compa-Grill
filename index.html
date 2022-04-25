@@ -34,43 +34,70 @@
             <ul class="header-left">
                 <a href="index.html"><li>Home</li></a>
                 <a href="menu.html"><li>Menu</li></a>
-                <!--<a href=""><li>Contact Us</li></a>-->
             </ul>
-            <a href="/index.html"><img class="header-center" src="/images/El Compa Grill Main Logo.jpg"></a>
+
+            <div class="header-center">
+                <a href="/index.html"><img class="header-center" src="/images/El Compa Grill Main Logo.jpg"></a>
+            </div>
+
             <ul class="header-right">
                 <a href="index.html"><li>Online Orders</li></a>
                 <a href="contact.html"><li>Contact Us</li></a>
             </ul>
         </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="menu.html">Menu</a>
+                <hr>
+                <a href="index.html">Online Order</a>
+                <hr>
+                <a href="contact.html">Contact</a>
+                <hr>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
         
     </header>
 
-
-    <div class="main">
-        <!--<img class="main-logo-img" src="/images/El Compa Grill PNG Logo.png">-->
-        <div class="slide-show">
-            <img src="/images/Birria Tacos.jpg">
-        </div>
-        <div class="business-hours">
-            <h1>Grill Hours</h1>
-            <ul>
-                <li>Thursday 12:00pm - 7:00pm</li>
-                <li>Friday 12:00pm - 7:00pm</li>
-                <li>Saturday 11:00am - 7:00pm</li>
-                <li>Sunday 9:00am - 5:00pm</li>
-            </ul>
-        </div>
-
-        <!--<img src="/images/El Compa Grill Main Logo.jpg">-->
-    
-        
+    <div class="mobile-logo">
+        <img src="/images/El Compa Grill Main Logo.jpg" alt="">
     </div>
+
+    <section>
+        <div class="main">
+            <div class="slide-show">
+                <img src="/images/Birria Tacos.jpg">
+            </div>
+            <div class="main-info">
+                <h1>Welcome to El Compa Grill!</h1>
+                <p>Each of surely as fiend flung me, i faintly bird i soul in. Not sorrowsorrow whispered me bends whispered tis door. Is of door all opened the angels, black clasp many soul moment to press i.</p>
+            </div>
+            <div class="business-hours">
+                <h1>Grill Hours</h1>
+                <ul>
+                    <li>Thursday 12:00pm - 7:00pm</li>
+                    <li>Friday 12:00pm - 7:00pm</li>
+                    <li>Saturday 11:00am - 7:00pm</li>
+                    <li>Sunday 9:00am - 5:00pm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
 
     <footer>
         <div class="brand-rights">
             <small>&#169; 2022 El Compa Grill | All Rights Reserved | <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">Powered by <i class="fab fa-aws"></i></a></small>
         </div>
     </footer>
+    <script src="/javascript/nav.js"></script>
 
 </body>
 
