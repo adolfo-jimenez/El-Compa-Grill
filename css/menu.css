@@ -16,14 +16,15 @@ body {
     background-repeat: no-repeat;
 }
 header {
-    background-color: rgba(255, 255, 255, 0.87);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     border: 1px solid black;
-    padding: 0px;
-    width: 96%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    width: 100%;
 }
 .topnav {
     display: none;
@@ -49,9 +50,9 @@ header {
 }
 .nav li {
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 400;
     font-family: 'Yellowtail', cursive;
-    color: black;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px cornflowerblue;
 }
 .header-left {
@@ -63,18 +64,16 @@ header {
     align-items: center;
 }
 .header-center {
-    /*float: left;
-    width:33%;
-    border: 1px solid black;*/
-    margin: 0px;
-    padding: 0px;
-}
-.header-center {
-    width: 150px;
+    background-color: blue;
+    border-radius: 8px;
 }
 .header-center a {
     margin: 0px;
     padding: 0px;
+}
+.header-center a img {
+    width: 150px;
+    height: 100%;
 }
 .header-right {
     text-align: right;
@@ -90,20 +89,77 @@ header {
 .header-right a li {
     /*background-color: aqua;*/
 }
-.menu-main {
-    /*filter: drop-shadow(1px 1px 3px white);*/
-    border: 1px solid #161616;
-    background-color: rgba(255, 255, 255, 0.97);
-    width: 96%;
-    padding: 0px;
-    margin-top: 50px;
+section {
+    /*border: 1px solid #161616;*/
+    background-color: rgba(255, 255, 255, 0.99);
+    padding: 10px;
+    width: 70%;
+    margin-top: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+.menu-intro {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.menu-intro h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+.menu-intro p {
+    text-align: center;
+    margin: 20px;
+}
+.menu-intro .btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-intro .btn a {
+    padding: 15px;
+    background: linear-gradient(
+        to right,
+        green 0%,
+        green 33%,
+        white 33%,
+        white 66%,
+        red 66%,
+        red 100%
+    );
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+}
+.menu-intro .btn a:hover {
+    filter: drop-shadow(3px 3px 3px rgb(55, 58, 252));
+}
+.menu-main {
+    /*filter: drop-shadow(1px 1px 3px white);
+    border: 1px solid #161616;*/
+    
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
 }
 .menu-main h1 {
     text-align: center;
     font-size: 40px;
+    margin: 20px;
+}
+.menu-main p {
+    text-align: center;
     margin: 20px;
 }
 .meat-choices {
@@ -131,8 +187,8 @@ header {
         red 75%,
         red 100%
     );*/
-    margin: 50px;
-    padding: 10px;
+    margin-bottom: 50px;
+    padding: 0px;
     display: flex;
 }
 .menu div {
@@ -145,7 +201,7 @@ header {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 0px;
 }
 .menu-items dt {
     font-size: 20px;
@@ -256,6 +312,11 @@ small a {
         margin-top: 0px;
         margin-left: unset;
         margin-right: unset;
+        position: unset;
+    }
+    section {
+        margin-top: 0px;
+        width: 87%;
     }
     /* Style the navigation menu */
     .topnav {
@@ -316,7 +377,29 @@ small a {
         margin-right: auto;
         margin-bottom: 40px;
         border: 1px solid #161616;
+        border-radius: 9px;
         filter: drop-shadow(2px 2px 5px white);
+    }
+
+    .menu-items {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+    .menu-items dt {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px;
+    }
+    .menu-items dd {
+        margin: 20px;
+    }
+    .main-logo-img {
+        width: 250px;
+        height: 200px;
+        padding: 20px;
+        /*background-color: blue;*/
     }
 
     .special-menu {
