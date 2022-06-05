@@ -236,7 +236,7 @@ small a {
     }
     /* Style the hamburger menu */
     .topnav a.icon {
-        background: black;
+        background: rgb(255, 255, 255);
         display: block;
         position: absolute;
         right: 0;

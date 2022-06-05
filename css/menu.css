@@ -122,15 +122,10 @@ section {
 }
 .menu-intro .btn a {
     padding: 15px;
-    background: linear-gradient(
-        to right,
-        green 0%,
-        green 33%,
-        white 33%,
-        white 66%,
-        red 66%,
-        red 100%
-    );
+    background-image: url(/images/El\ Compa\ Grill\ Main\ Color\ Scheme\ Balanced.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: rgb(0, 0, 0);
     font-size: 20px;
     border: 1px solid black;
@@ -140,9 +135,10 @@ section {
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
+    text-shadow: 1px 1px 1px white;
 }
 .menu-intro .btn a:hover {
-    filter: drop-shadow(3px 3px 3px rgb(55, 58, 252));
+    filter: drop-shadow(1px 1px 3px rgb(3, 165, 57));
 }
 .menu-main {
     /*filter: drop-shadow(1px 1px 3px white);
@@ -346,7 +342,7 @@ small a {
     }
     /* Style the hamburger menu */
     .topnav a.icon {
-        background: black;
+        background: rgb(255, 255, 255);
         display: block;
         position: absolute;
         right: 0;
@@ -381,7 +377,6 @@ small a {
         border-radius: 9px;
         filter: drop-shadow(2px 2px 5px white);
     }
-
     .menu-items {
         width: 100%;
         margin-left: auto;
