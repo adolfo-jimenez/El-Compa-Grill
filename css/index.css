@@ -240,11 +240,11 @@ section {
 }
 #slider #prev {
     left: -10px;
-    /*display: none;*/
+    display: none;
 }
   #slider #next {
     right: -10px;
-    /*display: none;*/
+    display: none;
 }
 #slider #prev:hover, #slider #next:hover {
     /*background-color: rgba(0, 0, 0, 0.5);
