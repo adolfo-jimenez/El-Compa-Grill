@@ -240,9 +240,11 @@ section {
 }
 #slider #prev {
     left: -10px;
+    /*display: none;*/
 }
   #slider #next {
     right: -10px;
+    /*display: none;*/
 }
 #slider #prev:hover, #slider #next:hover {
     /*background-color: rgba(0, 0, 0, 0.5);
@@ -281,12 +283,23 @@ section {
     margin-right: auto;
 }
 .social-media {
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.social-media h1 {
+    margin: 30px;
+}
+.social-links {
+    display: unset;
+    margin: 30px;
+}
+.social-media i, .social-media i{
+    color: black;
 }
 /* custom styling for all icons */
 i.fas,
 i.fab {
-  font-size: 25px;
+  font-size: 65px;
 }
 i.fa-aws {
     font-size: 20px;
@@ -298,16 +311,18 @@ i.fa-aws {
 }
 .fa-mixcloud {
     color: white;
-    
 }
 .fa-twitch {
     color: white;
 }
 .fa-facebook {
-    color: white;
+    color: black;
 }
-.fa-instagram {
-    color: white;
+i.fab .fa-instagram {
+    color: black;
+}
+i.fab .fa-yelp {
+    color: black;
 }
 .fa-twitter {
     color: white;
@@ -420,7 +435,7 @@ small a {
 
     .mobile-logo img {
         display: flex;
-        width: 60%;
+        width: 40%;
         margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
@@ -434,7 +449,7 @@ small a {
         /*background-color: chocolate;*/
         width: 100%;
         margin-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -445,7 +460,7 @@ small a {
         width: 90%;
         filter: drop-shadow(1px 1px 3px white);
         border: 1px solid #161616;
-        background: linear-gradient(
+        /*background: linear-gradient(
             to right,
             green 0%,
             green 33%,
@@ -453,7 +468,7 @@ small a {
             white 66%,
             red 66%,
             red 100%
-        );
+        );*/
         margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -535,22 +550,49 @@ small a {
 
 /*------------SLIDER WITH JAVASCRIPT END------------*/
 
+
+    .info-text {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    }
+    /*.intro {
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
     .intro {
         width: 90%;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
         background-color: white;
-        border: 1px solid #161616;
+    }
+    .intro h1 {
+        margin-bottom: 20px;
+    }
+    .intro p {
+        font-weight: 500;
     }
     .business-hours {
-        margin: 10px;
-        width: 85%;
+        width: 45%;
         padding: 10px;
         border: 1px solid #161616;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
-        background-color: white;
+    }
+    .social-media h1 {
+        margin: 30px;
+    }
+    .social-links {
+        display: unset;
+        margin: 10px;
     }
     /* custom styling for all icons */
     i.fas,
@@ -613,6 +655,35 @@ small a {
 }
 
 @media (max-width: 425px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/images/El\ Compa\ Grill\ Front\ Pic.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .main {
+        filter: drop-shadow(1px 1px 3px white);
+        background-image: url(/images/El\ Compa\ Grill\ Main\ Color\ Scheme\ Balanced.jpg);
+        background-position: center;
+        background-size: 130% 100%;
+        background-repeat: no-repeat;
+        /*background: linear-gradient(
+            to right,
+            green 0%,
+            green 25%,
+            white 25%,
+            white 75%,
+            red 75%,
+            red 100%
+        );*/
+        margin: 0px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /*------------SLIDER WITH JAVASCRIPT------------*/
 
 #slider {
@@ -666,7 +737,7 @@ small a {
 #slider #prev {
     left: -10px;
 }
-  #slider #next {
+#slider #next {
     right: -10px;
 }
 #slider #prev:hover, #slider #next:hover {
@@ -676,12 +747,19 @@ small a {
 
 /*------------SLIDER WITH JAVASCRIPT END------------*/
 
+.social-media h1 {
+    margin: 30px;
+}
+.social-links {
+    display: unset;
+    margin: 0px;
+}
 footer {
     width: 93%;
 }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     #slider {
         border-radius: 10px;
         position: relative;
